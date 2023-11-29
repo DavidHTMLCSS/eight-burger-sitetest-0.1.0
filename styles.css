@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+html {
+    font-family: 'Secular One', sans-serif;
+    background-color: black;
+    margin: 0;
+}
+
+button {
+    font-family: 'Secular One', sans-serif;
+    font-size: 25px;
+    padding: 5px 35px;
+    background-color: yellow;
+    border: 5px solid black;
+    border-color: yellow;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button:hover {
+    color: grey;
+}
+
+button:active {
+    background-color: orange;
+    border-color: orange;
+}
+
+header {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    padding: 15px;
+    position: relative;
+    z-index: 999; /* Добавляем свойство z-index */
+}
+
+.second-order-button {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Secular One', sans-serif;
+    font-size: 25px;
+    padding: 5px 35px;
+    background-color: yellow;
+    border: 5px solid black;
+    border-color: yellow;
+    color: black;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.logo_nav {
+    width: 80px;
+    height: auto;
+    padding: 0;
+    margin: auto;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: yellow;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* main */
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Чёрный фон по умолчанию */
+}
+
+#background_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполнение всего пространства */
+    filter: brightness(50%); /* Немного затемняем видео */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content img {
+    width: 80%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 10px;
+    }
+
+    .order-button {
+        display: block;
+        position: absolute;
+        padding: 5px 15px;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+
+    .logo_nav {
+        width: 60px;
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: red;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 5px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    button {
+        padding: 8px 25px;
+    }
+}
