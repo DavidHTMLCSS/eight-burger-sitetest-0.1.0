@@ -11,14 +11,8 @@
         <div class="logo">
             <img class="logo_nav" src="images/8-mid-logo.png" alt="לוגו של בורגרים">
         </div>
-        <button class="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </button>
         <nav>
             <ul>
-                <li><a href="#home">בית</a></li>
                 <li><a href="#about">עלינו</a></li>
                 <li><a href="#menu">תפריט</a></li>
                 <li><a href="#contact">צור קשר</a></li>
@@ -27,15 +21,136 @@
         <button class="order-button">להזמנה</button>
     </header>
     <main>
-        <div class="background">
-            <video autoplay muted loop id="background_video">
-                <source src="videos/background_video.mp4" type="video/mp4">
-            </video>
+        <!-- home -->
+        <section id="home">
+           
+            <div class="background">
+                <video autoplay muted loop id="background_video">
+                    <source src="videos/background_video.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="content">
                 <img src="images/8-full-logo.png" alt="לוגו של בורגרים">
+                <button class="order-button">להזמנה</button>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- about -->
+                        <h2>עלינו</h2>
+                        <div class="about-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate nam suscipit fuga molestias unde! Error necessitatibus, magnam facere quisquam nobis officia? Commodi sapiente provident quo adipisci possimus, cum voluptates!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Gif -->
+                        <div class="about-gif">
+                            <img src="images/gif-about.gif" alt="GIF">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="container">
+                <h2>תפריט</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>בקטנה</h2>
+                        <p>בורגר מיני בקר (13₪)</p>
+                        <p>בורגר מיני טלה(13₪)</p>
+                        <p>בורגר מיני מרגז(13₪)</p>
+                        <p>חביתה במיני לחמניה(13₪)</p>
+                        <img src="images/food/mini-burger.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <h2>המבורגרים</h2>
+                        <p>המבורגר - 150 גרם (35₪)</p>
+                        <p>המבורגר - 200 גרם (42₪)</p>
+                        <p>בהמבורגר אנטריקוט (46₪)</p>
+                        <p>קריספי צ׳יקן בורגר (30₪)</p>
+                        <img src="images/food/burger.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <h2>טורטיות</h2>
+                        <p>אנטריקוט בטורטייה (38₪)</p>
+                        <p>פרגית בטורטייה (38₪)</p>
+                        <p>חזה עוף בטורטייה (38₪)</p>
+                        <p>קבב בטורטייה (38₪)</p>
+                        <p>אנטריקוט ופרגית בטורטייה (38₪)</p>
+                        <p>אנטריקוט וקבב בטורטייה (38₪)</p>
+                        <p>פרגית וקבב בטורטייה (38₪)</p>
+                        <p>עוף וקבב בטורטייה (38₪)</p>
+                        <img src="images/food/tortia.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <h2>סלטים</h2>
+                        <p>סלט שניצל (29₪)</p>
+                        <p>סלט פרגית (36₪)</p>
+                        <p>סלט סלופי ג׳ו (33₪)</p>
+                        <p>סלט אנטריקוט (36₪)</p>
+                        <p>סלט חזה עוף (29₪)</p>
+                        <p>סלט קבב (29₪)</p>
+                        <p>סלט מיקס בשר (36₪)</p>
+                        <img src="images/food/salat.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <h2>תוספות</h2>
+                        <p>קריספי צ׳יפס (10₪)</p>
+                        <p>צ׳יפס מתובל (10₪)</p>
+                        <p>טבעות בצל (15₪)</p>
+                        <p>כדורי פירה (10₪)</p>
+                        <p>פוטטוס (10₪)</p>
+                        <p>שניצלונים (15₪)</p>
+                        <p>צ׳יפס בטטה (15₪)</p>
+                        <p>הום פרייז (15₪)</p>
+                        <p>מיקס מטוגנים (15₪)</p>
+                        <img src="images/food/chips.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <h2>שתייה קלה</h2>
+                        <p>קוקה קולה</p>
+                        <p>קולה זירו</p>
+                        <p>פחית ספרייט</p>
+                        <p>פחית פאנטה</p>
+                        <p>פריגת ענבים</p>
+                        <p>פריגת תפוזים</p>
+                        <p>פריגת לימונענע</p>
+                        <p>סודה</p>
+                        <p>מים מינרליים</p>
+                        <p>פיוז טי אפרסק</p>
+                        <p>מים בטעם אפרסק</p>
+                        <p>מים בטעם תפוח</p>
+                        <p>מים בטעם ענבים</p>
+                        <h2>10₪</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>צור קשר</h2>
+                    <p>1-700-501-083</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/reshetshmone/" target="_blank"><img src="images/svg/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/eight__burger/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img src="images/svg/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="https://www.tiktok.com/@eight_beersheva?is_from_webapp=1&sender_device=pc" target="_blank"><img src="images/svg/tiktok.svg" alt="TikTok"></a></li>
+                    </ul>
+                </div>                
             </div>
         </div>
-    </main>
+    </section>
+    </footer>
+    
 <script src="script.js"></script>
 </body>
 </html>
