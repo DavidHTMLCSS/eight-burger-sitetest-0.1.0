@@ -14,9 +14,9 @@ button {
     font-family: 'Secular One', sans-serif;
     font-size: 25px;
     padding: 5px 35px;
-    background-color: yellow;
+    background-color: #F8DF32;
     border: 5px solid black;
-    border-color: yellow;
+    border-color: #F8DF32;
     color: black;
     border-radius: 20px;
     display: flex;
@@ -46,7 +46,7 @@ header {
 }
 
 h2 {
-    color: yellow;
+    color: #F8DF32;
 }
 
 .second-order-button {
@@ -58,9 +58,9 @@ h2 {
     font-family: 'Secular One', sans-serif;
     font-size: 25px;
     padding: 5px 35px;
-    background-color: yellow;
+    background-color: #F8DF32;
     border: 5px solid black;
-    border-color: yellow;
+    border-color: #F8DF32;
     color: black;
     border-radius: 20px;
 }
@@ -77,14 +77,11 @@ nav ul {
     display: flex;
 }
 
-nav ul li {
+nav a {
     margin: 0;
     padding: 0 15px;
-}
-
-nav ul li a {
     text-decoration: none;
-    color: yellow;
+    color: #F8DF32;
 }
 
 .logo_nav {
@@ -109,7 +106,7 @@ nav ul li a {
 .menu-toggle .bar {
     width: 30px;
     height: 3px;
-    background-color: yellow;
+    background-color: #F8DF32;
     margin: 5px 0;
     transition: 0.4s;
 }
@@ -218,14 +215,14 @@ section {
 
 #menu .col-md-4 img{
     border-radius: 20px;
-    border-color: yellow;
+    border-color: #F8DF32;
     border-width: 3px;
 }
 
 /* footer "צור קשר" */
 
 footer {
-    background-color: yellow; 
+    background-color: #F8DF32; 
     color: #fff; 
     padding: 50px 0; 
 }
