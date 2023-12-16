@@ -11,7 +11,7 @@ html {
 
 button {
     font-family: 'Secular One', sans-serif;
-    font-size: 25px;
+    font-size: 50px;
     padding: 5px 35px;
     background-color: #F8DF32;
     border: 5px solid black;
@@ -48,6 +48,7 @@ button:active {
   }  
   
   .dialog-content {
+    font-size: 30px;
     background-color: black;
     margin: 15% auto;
     padding: 20px;
