@@ -187,37 +187,34 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* "תפריט" */
+/* "כתובות" */
 
-#menu {
+#addresses {
     padding: 50px 0;
-    background-color: red;
-    text-align: center;
-}
-#menu p {
-    color: white;
-    font-size: 20px;
-}
-
-#menu .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-#menu .col-md-4 {
+#addresses h2 {
+    text-align: center;
     margin-bottom: 30px;
-    border: 2px solid white;
-    flex-basis: calc(33.33% - 20px);
-    border-radius: 10px;
-    margin: 10px;
+    width: 100%;
 }
 
-#menu .col-md-4 img{
-    border-radius: 20px;
-    border-color: #F8DF32;
-    border-width: 3px;
+#addresses a{
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    color: white;
 }
+
+#addresses .col-md-4 {
+    text-align: center;
+    margin-bottom: 30px;
+    flex-basis: 30%; /* Ширина каждого столбца */
+}
+
 
 /* footer "צור קשר" */
 
@@ -262,7 +259,7 @@ h3 {
 }
 
 .social-icons img {
-    width: 100%;
+    width: 50px;
     height: auto;
 }
 
