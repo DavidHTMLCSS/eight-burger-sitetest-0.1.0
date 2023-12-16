@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
-/* Pc or notebook*/
+/* Pc or notebook */
 
 html {
     scroll-behavior: smooth;
@@ -33,6 +33,74 @@ button:active {
     border-color: orange;
 }
 
+/* Dialog window */
+
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }  
+  
+  .dialog-content {
+    background-color: black;
+    margin: 15% auto;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    border-radius: 15px;
+    animation-name: fadeInOut;
+    animation-duration: 0.5s;
+  }
+
+  .dialog-title {
+    margin-top: 0;
+  }
+  
+  .other-sites {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .other-sites button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  @keyframes fadeInOut {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Header */
+
 header {
     background-color: red;
     display: flex;
@@ -41,27 +109,10 @@ header {
     border-radius: 30px;
     padding: 15px;
     position: relative;
-    z-index: 1; 
 }
 
 h2 {
     color: #F8DF32;
-}
-
-.second-order-button {
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Secular One', sans-serif;
-    font-size: 25px;
-    padding: 5px 35px;
-    background-color: #F8DF32;
-    border: 5px solid black;
-    border-color: #F8DF32;
-    color: black;
-    border-radius: 20px;
 }
 
 nav {
@@ -119,7 +170,6 @@ section {
 
 #home {
     position: relative;
-    z-index: 1;
 }
 
 .background {
@@ -145,7 +195,6 @@ section {
 
 .content {
     position: relative;
-    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,73 +310,4 @@ h3 {
 .social-icons img {
     width: 50px;
     height: auto;
-}
-
-@media only screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 15px 10px;
-    }
-
-    .order-button {
-        display: block;
-        position: absolute;
-        padding: 5px 15px;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 999;
-    }
-
-    .logo_nav {
-        width: 60px;
-        padding: 0;
-    }
-
-    nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: red;
-        border-radius: 10px;
-        padding: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    nav ul {
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        padding: 5px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu-toggle.active + nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .menu-toggle.active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-toggle.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    button {
-        padding: 8px 25px;
-    }
 }

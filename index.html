@@ -16,12 +16,29 @@
         <nav>
             <a href="tel:1-700-501-083">1-700-501-083</a>
         </nav>
-        <button class="order-button">להזמנה</button>
+        <button onclick="showDialog()">להזמנה</button>
+        <div id="dialog" class="dialog">
+            <div class="dialog-content">
+              <span onclick="closeDialog()" class="close">&times;</span>
+              <h2>בחר עיר להזמנה</h2>
+              <div class="other-sites">
+                <button onclick="openSite('https://8ofakim.web.delivery/')">אופקים</button>
+                <button onclick="openSite('')">אשקלון</button>
+                <button onclick="openSite('')">באר שבע</button>
+                <button onclick="openSite('')">נתיבות</button>
+                <button onclick="openSite('')">ירושלים</button>
+                <button onclick="openSite('')">חדרה</button>
+                <button onclick="openSite('')">חיפה</button>
+                <button onclick="openSite('')">רהט</button>
+                <button onclick="openSite('')">בת-ים</button>
+                <!-- Добавьте остальные кнопки по аналогии -->
+              </div>
+            </div>
+          </div>
     </header>
     <main>
         <!-- home -->
         <section id="home">
-
             <div class="background">
                 <video autoplay muted loop id="background_video">
                     <source src="videos/background_video.mp4" type="video/mp4">
@@ -29,7 +46,7 @@
             </div>
             <div class="content">
                 <img src="images/8-full-logo.png" alt="לוגו של בורגרים">
-                <button class="order-button">להזמנה</button>
+                <button onclick="showDialog()">להזמנה</button>
             </div>
         </section>
         <section id="about">
@@ -67,7 +84,7 @@
                         <a>חדרה,</a>
                         <a>חיפה,</a>
                         <a>רהט,</a>
-                        <a>בת-ים</a>
+                        <a>בת-ים,</a>
                     </div>
                 </div>
             </div>
