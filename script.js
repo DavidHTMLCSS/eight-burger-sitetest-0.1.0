@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var video = document.getElementById('background_video');
+  video.play();
+});
+
 function showDialog() {
     var dialog = document.getElementById('dialog');
     dialog.style.display = 'block';

@@ -48,9 +48,9 @@ button:active {
   }  
   
   .dialog-content {
-    font-size: 30px;
+    font-size: 50px;
     background-color: black;
-    margin: 15% auto;
+    margin: 30% auto;
     padding: 20px;
     width: 70%;
     text-align: center;
@@ -65,13 +65,13 @@ button:active {
   
   .other-sites {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin-top: 20px;
   }
   
   .other-sites button {
-    font-size: 16px;
+    font-size: 50px;
     padding: 10px 20px;
   }
 
@@ -113,6 +113,7 @@ header {
 }
 
 h2 {
+    font-size: 60px;
     color: #F8DF32;
 }
 
@@ -222,7 +223,7 @@ section {
 }
 
 .about-description p {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.6;
 }
 
@@ -259,10 +260,11 @@ section {
     color: white;
 }
 
-#addresses .col-md-4 {
+#addresses .col {
+    font-size: 25px;
     text-align: center;
     margin-bottom: 30px;
-    flex-basis: 30%; /* Ширина каждого столбца */
+    flex-basis: 30%;
 }
 
 
@@ -281,7 +283,7 @@ footer {
 
 h3 {
     color: red;
-    font-size: 24px; 
+    font-size: 40px; 
     margin-bottom: 20px; 
 }
 
