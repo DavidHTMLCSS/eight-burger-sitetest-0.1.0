@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Eight burger</title>
     <link rel="icon" type="image/ico" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img class="logo_nav" src="images/8-mid-logo.png" alt="לוגו של בורגרים">
+            <img class="logo_nav" src="images/8-mid-logo.png">
         </div>
         <nav>
             <a href="tel:1-700-501-083">1-700-501-083</a>
@@ -22,9 +22,9 @@
               <h2>בחר עיר להזמנה</h2>
               <div class="other-sites">
                 <button onclick="openSite('https://8ofakim.web.delivery/')">אופקים</button>
+                <button onclick="openSite('https://8kakal-bs.web.delivery/')">באר שבע</button>
+                <button onclick="openSite('https://8netivot.web.delivery/')">נתיבות</button>
                 <button onclick="openSite('')">אשקלון</button>
-                <button onclick="openSite('')">באר שבע</button>
-                <button onclick="openSite('')">נתיבות</button>
                 <button onclick="openSite('')">ירושלים</button>
                 <button onclick="openSite('')">חדרה</button>
                 <button onclick="openSite('')">חיפה</button>
@@ -44,57 +44,97 @@
                 </video>
             </div>
             <div class="content">
-                <img src="images/8-full-logo.png" alt="לוגו של בורגרים">
-                <button onclick="showDialog()">להזמנה</button>
+                <img src="images/8-full-logo.png">
+                <button onclick="showDialog()" style="font-size: 110px; padding: 10px 65px;">להזמנה</button>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>קצת עלינו</h2>
+                        <h3><img src="images/8-mid-logo.png" style=" width: 80px; height: auto;"> שף סנוויץ</h3>
+                        <div class="about-description">
+                        <p>
+                            רשת מהפכנית כחול לבן של מזון מהיר ומשובח.
+                        </p>
+                        <p>
+                            הרשת הוקמה בשנת 2015, על ידי מס אנשי עסקים המתמחים בענף המזון, ובינהם השף המעוטר מושיק רוט בעל 2 כוכבי מישלן.
+במטרה לספק מזון מהיר איכותי ושווה לכל כיס.
+                        </p>
+                        <h3>גם מהיר גם איכותי</h3>
+                            <p>
+                                הרשת משתמשת בבשר איכותי, מהפעלים הכי טובים בישראל.
+כל חומרי הגלם עוברים בקרת איכות ברמה הגבוהה ביותר, יחד עם ירקות טריים יום יום.
+                            </p>
+                            <p>
+                                את רטבי הבית אנו מייצרים על פי מתכוני השף, וזה מה שנותן טעם יחודי לכל ארוחה אצלנו.
+                            </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-gif">
+                            <img src="images/gif-about.gif" alt="GIF">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="addresses">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3>באר שבע</h3>
-                        <a href="https://maps.app.goo.gl/wJiqnYMJnAqg8S3Z8">גרנד קניון (קומה 2)</a>
-                    </div>
-                    <div class="col">
-                        <h3>סניפים נוספים</h3>
-                        <a>ירושלים,</a>
-                        <a>חדרה,</a>
-                        <a>חיפה,</a>
-                        <a>רהט,</a>
-                        <a>בת-ים,</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3>באר שבע</h3>
-                        <a href="https://maps.app.goo.gl/oKrJyJqVN85F8xnx9">קק"ל 32 (עיר העתיקה)</a>
-                    </div>
-                    <div class="col">
-                        <h3>נתיבות</h3>
-                        <a href="https://maps.app.goo.gl/PhLo9aJsqbfSxuCUA">יוספ סמילו 42</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+                        <div>
+                            <h3>באר שבע</h3>
+                            <a href="https://maps.app.goo.gl/wJiqnYMJnAqg8S3Z8">גרנד קניון (קומה 2)</a>
+                        </div>
+                        <div>
+                            <a href="https://maps.app.goo.gl/oKrJyJqVN85F8xnx9">קק"ל 32 (עיר העתיקה)</a>
+                        </div>
                         <h3>אשקלון</h3>
                         <a href="https://maps.app.goo.gl/aWzugwT27YysdGFA9">הנמל 9 (מתחם הקניון מרינה)</a>
-                    </div>
-                    <div class="col">
+                        <h3>נתיבות</h3>
+                        <a href="">יוסף סמילו 10</a>
                         <h3>אופקים</h3>
                         <a href="https://maps.app.goo.gl/vEbqGomVFRJfR5P48">המלאכה 4</a>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <h3>סניפים נוספים</h3>
+                <a>ירושלים/</a>
+                <a>חדרה/</a>
+                <a>חיפה/</a>
+                <a>רהט/</a>
+                <a>בת-ים</a>
             </div>
+        </div>
+    </div>
+        </div>
         </section>
         <section id="addresses">
             <!-- telephone -->
             <div class="row">
                 <div class="col">
                     <h3 class="telephone">1-700-501-083</h3>
+                    <!-- קשר חוזר -->
+<button onclick="showFeedbackModal()" style="margin: auto;">צרו קשר</button>
+<div id="feedbackModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeFeedbackModal()">&times;</span>
+    <h2>אנו מוכנים לענות לך בכל עת</h2>
+    <form id="feedbackForm" action="https://formsubmit.co/9679559c6dbea3d5cffe7bc3603ffa08" method="POST">
+      <div class="form-group">
+        <input type="text" name="שם" placeholder="שם ושם משפחה" required dir="rtl">
+      </div>
+      <div class="form-group">
+        <input type="tel" name="טלפון" placeholder=" מס' טלפון(05X-XXXXXXX)" pattern="[0-9]{3}[0-9]{7}" required dir="rtl">
+      </div>
+      <div class="form-group">
+        <input type="text" name="תוכן" rows="4" required dir="rtl" placeholder="תוכן"></textarea>
+      </div>
+        <button type="submit">לשלוח</button>
+    </form>
+  </div>
+</div>
                 </div>
             <!-- social -->
                     <ul class="social-icons">
@@ -110,7 +150,16 @@
                     </ul>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="scriptSSS.js"></script>
 </body>
 
 </html>
+
+
+
+<!-- 
+    
+    Site created by David-Mickle
+    @all rights reserved 2023@
+
+-->
